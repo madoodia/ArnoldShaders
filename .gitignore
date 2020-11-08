@@ -1,0 +1,11 @@
+*build
+*build-*
+!.buildSystem
+# vscode
+!.vscode
+.vscode/ipch
+deploy*
+!deploy/how_to_deploy.txt
+!deploy/shaders
+!deploy/textures
+!deploy/Zolf.exe
