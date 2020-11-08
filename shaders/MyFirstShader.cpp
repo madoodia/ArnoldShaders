@@ -26,7 +26,7 @@ node_finish
 
 shader_evaluate
 {
-  sg->out.RGB = AiShaderEvalParamRGB(p_color);
+  sg->out.RGB() = AiShaderEvalParamRGB(p_color);
 }
 
 node_loader

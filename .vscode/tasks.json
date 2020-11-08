@@ -51,7 +51,7 @@
       "type": "shell",
       "label": "run",
       "windows": {
-        "command": "${workspaceFolder}/${workspaceFolderBasename}.exe",
+        "command": "${workspaceFolder}/build_scripts/run.bat",
       },
       "linux": {
         "command": "${workspaceFolder}/${workspaceFolderBasename}",

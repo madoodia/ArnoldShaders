@@ -25,6 +25,7 @@ cl -c %ROOT%/%FOLDER%/%FILE_NAME%.cpp -I. -I%SDKS_LOCATION%/Arnold-6.1.0.0/inclu
 @REM link
 link %ROOT%/%FOLDER%/%FILE_NAME%.obj /out:%ROOT%/%FOLDER%/%FILE_NAME%.dll /nologo /machine:x64 /dll %SDKS_LOCATION%/Arnold-6.1.0.0/lib/ai.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
 
+@REM delete extra files
 del /F %ROOT%\%FOLDER%\%FILE_NAME%.lib
 del /F %ROOT%\%FOLDER%\%FILE_NAME%.exp 
 del /F %ROOT%\%FOLDER%\%FILE_NAME%.obj
