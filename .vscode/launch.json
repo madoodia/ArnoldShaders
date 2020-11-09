@@ -6,16 +6,18 @@
   "configurations": [
     {
       "type": "cppdbg",
-      "name": "g++ Debugger",
+      "name": "Debugger",
       "request": "launch",
-      "program": "${workspaceFolder}/${workspaceFolderBasename}",
+      "program": "${workspaceFolder}/${relativeFileDirname}/${fileBasenameNoExtension}.cpp",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "build_debug",
       "environment": [],
       "externalConsole": false,
-      "windows": {},
+      "windows": {
+        "miDebuggerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.27.29110/bin/Hostx64/x64/cl.exe"
+      },
       "linux": {
         "MIMode": "gdb",
         "setupCommands": [
